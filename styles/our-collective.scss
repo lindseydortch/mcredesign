@@ -1,0 +1,230 @@
+// .our-collective {
+//   display: flex;
+//   align-items: stretch;
+//   height: 100vh;
+
+//   .side-1 {
+//     width: 25%;
+//     height: 100%;
+//   }
+
+//   .side-2 {
+//     width: 75%;
+//     position: relative;
+
+//     padding: 5rem;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     background-blend-mode: soft-light;
+//     background-image: url('../images/pi2.jpg');
+//     background-color: $green;
+
+//     display: flex;
+
+//     .one50 {
+//       position: absolute;
+//       font-size: 20rem;
+//       z-index: 222;
+//       color: $blue-primary;
+//       opacity: 0.3;
+//       bottom: 0rem;
+//       right: 5rem;
+//     }
+
+//     &.ocHeadline {
+//       flex-direction: column;
+//       justify-content: center;
+//     }
+
+//     &.ocListSide {
+//       flex-direction: column;
+//       position: relative;
+//     }
+    
+
+//     &.d-none {
+//       display: none;
+//     }
+//   }
+
+//   .service {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     // padding: 7rem;
+//     height: 25%;
+//     cursor: pointer;
+
+//     &.service-1,
+//     &.service-2,
+//     &.service-3,
+//     &.service-4 {
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       background-size: cover;
+//       background-blend-mode: soft-light;
+//       border-bottom: 1px solid $green;
+//     }
+
+//     &.service-1 {
+//       background-image: url('../images/pi15.jpg');
+//       background-color: $blue-tertiary;
+//     }
+//     &.service-2 {
+//       background-image: url('../images/pi12.jpg');
+//       background-color: $blue-tertiary;
+//     }
+//     &.service-3 {
+//       background-image: url('../images/s4.jpg');
+//       background-color: $blue-tertiary;
+//     }
+//     &.service-4 {
+//       background-image: url('../images/s14.jpg');
+//       background-color: $blue-tertiary;
+//     }
+//   }
+
+//   .service__heading {
+//     font-size: 1.6rem;
+//     text-transform: uppercase;
+//     color: $white;
+//     text-align: center;
+//     cursor: pointer;
+//   }
+
+//   .oc__list-container {
+
+//     .oc__list {
+//       list-style: none;
+//     }
+
+//     .oc__item {
+//       display: flex;
+//       font-size: 2rem;
+//       text-transform: uppercase;
+
+//       color: $blue-tertiary;
+
+//       span {
+//         font-size: 2rem;
+//         color: $blue-primary;
+//         margin-right: 1rem;
+//         font-weight: 600;
+//       }
+//     }
+//   }
+
+//   .ocStorytelling {
+//     .oc__image {
+//       position: absolute;
+//       // width: 30%;
+//       height: auto;
+
+//       &--1 {
+//         width: 40%;
+//         right: 0;
+//         bottom: -2rem;
+//       }
+
+//       &--2 {
+//         width: 35%;
+//         right: 20%;
+//         bottom: -2rem;
+//       }
+
+//       .img {
+//         width: 100%;
+//         height: 100%;
+//       }
+//     }
+//   }
+
+//   .ocContent {
+//     .oc__image {
+//       position: absolute;
+//       // width: 30%;
+//       height: auto;
+
+//       &--1 {
+//         width: 70%;
+//         right: -10rem;
+//         bottom: -2rem;
+//       }
+
+//       .img {
+//         width: 100%;
+//         height: 100%;
+//       }
+//     }
+//   }
+
+//   .ocDigital {
+//     .oc__image {
+//       position: absolute;
+//       // width: 30%;
+//       height: auto;
+
+//       &--1 {
+//         width: 30%;
+//         right: 0;
+//         bottom: -4rem;
+//       }
+
+//       &--2 {
+//         width: 30%;
+//         right: 15%;
+//         bottom: -2rem;
+//       }
+
+//       .img {
+//         width: 100%;
+//         height: 100%;
+//       }
+//     }
+//   }
+
+//   .ocAmp {
+//     .oc__image {
+//       position: absolute;
+//       // width: 30%;
+//       height: auto;
+
+//       &--1 {
+//         width: 60%;
+//         right: -20rem;
+//         bottom: -25rem;
+//       }
+
+//       &--2 {
+//         width: 70%;
+//         right: -10rem;
+//         bottom: -2rem;
+//       }
+
+//       .img {
+//         width: 100%;
+//         height: 100%;
+//       }
+//     }
+//   }
+// }
+
+#ourCollective {
+  .buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-bottom: 3rem;
+
+    &:first-of-type {
+      margin-right: 2rem;
+    }
+  }
+
+
+}

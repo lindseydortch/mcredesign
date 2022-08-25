@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mill + Co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="navbar">
+      <div class="logo__container">
+        <img src="./images/logo.png" alt="Mill + Co Logo">
+      </div>
+      <div class="menu">
+        <a>Menu</a>
+        <span class='plus-close-icon'>+</span>
+      </div>
+    </div>
+
+    <div class="menu__container d-none">
+      <div class="menu__content">
+        <div class="l1-item">
+          <span>&nbsp;</span>
+          <a href='#home'>Home</a>
+        </div>
+        <div class="l1-item fyb">
+          <span>+</span>
+          <a href='#findYourBalance'>Find Your Balance</a>
+        </div>
+        <div class="l2__container l2__container--fyb d-none">
+          <div class="l2-item">
+            <a href="#howToCreateBalance">How Do We Create Balance?</a>
+          </div>
+        </div>  
+        <div class="l1-item cb">
+          <span>+</span>
+          <a href='#creatingBalance'>Creating Balance</a>
+        </div>
+        <div class="l2__container l2__container--cb d-none">
+          <div class="l2-item">
+            <a href="#blueprintingBalance">Blueprinting Balance</a>
+          </div>
+          <div class="l2-item">
+            <a href="#buildingBalance">Building Balance</a>
+          </div>
+          <div class="l2-item">
+            <a href="#realWorldBalance">Real World Balance</a>
+          </div>
+        </div>
+        <div class="l1-item mtm">
+          <span>+</span>
+          <a href='#mtmHeadline'>Meet the Millers</a>
+        </div>
+        <div class="l2__container l2__container--mtm d-none">
+          <div class="l2-item">
+            <a href="#ourLeaders">Our Leaders</a>
+          </div>
+          <div class="l2-item">
+            <a href="#ourCollective">Our Collective</a>
+          </div>
+        </div>
+        <div class="l1-item formsLink">
+          <span>+</span>
+          <a href='#forms'>Contact Us</a>
+        </div>
+        <div class="l2__container l2__container--forms d-none">
+          <div class="l2-item">
+            <a href="#">Work With Us</a>
+          </div>
+          <div class="l2-item">
+            <a href="#">Work For Us</a>
+          </div>
+        </div>
+        <div class="l1-item">
+          <span>&nbsp;</span>
+          <a href='#trendTrackerReport'>Trend Tracker Report</a>
+        </div>
+        <div class="l1-item">
+          <span>&nbsp;</span>
+          <a href='#'>Insights</a>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+    
+  </header>
+
+  <section class="home" id='home'>
+    <div class="container">
+      <div class="section-line section-line__pos50">
+        &nbsp;
+      </div>
+      <div class="box-1 bg-bt">
+        <div class="bg-1">
+          &nbsp;
+        </div>
+        <div class='box__content'>
+          <h1 class="section__heading section__heading--1 color-white">
+            <span class='headspan--1'>Strategy.</span>
+            <span class='headspan--2'>Storytelling.</span>
+            <span class='headspan--3'>Solutions.</span>
+          </h1>
+          <h2 class="section__heading section__heading--2 color-green">
+            For All Brand Kind.
+          </h2>
+          <button class="btn btnLink btn--blue-p openWWUModalBtn">
+            Work With Us
+          </button>
+        </div> 
+      </div>
+      <div class="box-2">
+        <div class="bg-2">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="how-to-create-balance" id='howToCreateBalance'>
+    <h2 class="section__heading color-bt">
+      We strike the perfect balance between big agency and small freelancer.
+    </h2>
+    <div class="cb__container" id='cbHeadline'>
+      <div class="step step1">
+        We connect your challenges, goals and insights to conduct energetic strategy around your vision.
+      </div>
+      <div class="plus-step-icon">
+        +
+      </div>
+      <div class="step step2">
+        Backed by a curated collective of nearly 150 freelance creative experts from around the world (93% women).
+      </div>
+      <div class="equal-step-icon">
+        =
+      </div>
+      <div class="step step3">
+        Draw up a blueprint and build a solution.
+      </div>
+    </div>
+  </section>
+
+  <section class="find-your-balance" id='findYourBalance'>
+    <div class="slide-wrapper"> 
+      <div class="container initial hasEffect">
+        <div class="section-line section-line__pos50">
+          &nbsp;
+        </div>
+        <div class="box-1 box-1--hasEffect">
+          
+          <div class="bg-1 bg-1--1">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            <h3 class="section__heading">
+              Flexible and Nimble
+            </h3>
+          </div> 
+        </div>
+        <div class="box-2 box-2--hasEffect">
+          <div class="bg-2 bg-2--1">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            <h3 class="section__heading">
+              Stable and reliable
+            </h3>
+          </div> 
+        </div>
+      </div>
+      <div class="container initial hasEffect">
+        <div class="section-line section-line__pos50">
+          &nbsp;
+        </div>
+        <div class="box-1 box-1--hasEffect">
+          
+          <div class="bg-1 bg-1--2">
+            &nbsp;
+          </div>
+          <div class='box__content '>
+            <h3 class="section__heading">
+              Confident and competent
+            </h3>
+          </div> 
+        </div>
+        <div class="box-2 box-2--hasEffect">
+          <div class="bg-2 bg-2--2">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            <h3 class="section__heading">
+              Humble and hungry
+            </h3>
+          </div> 
+        </div>
+      </div>
+      <div class="container initial hasEffect">
+        <div class="section-line section-line__pos50">
+          &nbsp;
+        </div>
+        <div class="box-1 box-1--hasEffect">
+          
+          <div class="bg-1 bg-1--3">
+            &nbsp;
+          </div>
+          <div class='box__content '>
+            <h3 class="section__heading">
+              First-rate experts
+            </h3>
+          </div> 
+        </div>
+        <div class="box-2 box-2--hasEffect">
+          <div class="bg-2 bg-2--3">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            <h3 class="section__heading">
+              First-name basis
+            </h3>
+          </div> 
+        </div>
+      </div>
+      <div class="container initial hasEffect">
+        <div class="section-line section-line__pos50">
+          &nbsp;
+        </div>
+        <div class="box-1 box-1--hasEffect">
+          
+          <div class="bg-1 bg-1--4">
+            &nbsp;
+          </div>
+          <div class='box__content '>
+            <h3 class="section__heading">
+              In-house agency feel
+            </h3>
+          </div> 
+        </div>
+        <div class="box-2 box-2--hasEffect">
+          <div class="bg-2 bg-2--4">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            <h3 class="section__heading">
+              Freedom of management
+            </h3>
+          </div> 
+        </div>
+      </div>
+      <div class="container initial hasEffect">
+        <div class="section-line section-line__pos50">
+          &nbsp;
+        </div>
+        <div class="box-1 box-1--hasEffect">
+          
+          <div class="bg-1 bg-1--5">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            <h3 class="section__heading">
+              Feel something big
+            </h3>
+          </div> 
+        </div>
+        <div class="box-2 box-2--hasEffect">
+          <div class="bg-2 bg-2--5">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            <h3 class="section__heading">
+              Never too small
+            </h3>
+          </div> 
+        </div>
+      </div>
+
+
+      <div class="plus plus__left plus-disabled">
+        &minus;
+      </div>
+      <div class="plus plus__right">
+        +
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="creating-balance" id='creatingBalance'>
+    <div class="hasSameBackground">
+      <section class="headline__container" id='creatingBalanceHeadline'>
+        <h2 class="section__heading color-bt cb__heading">
+          <span class="an1">
+            Strategy. 
+          </span>
+          <span class="an2">
+            Storytelling. 
+          </span>
+          <span class="an3">
+            Solutions. 
+          </span>
+          <span class="an4">
+            For all brandkind.
+          </span>
+             
+        </h2>
+        <div class="headline">
+          <p class="headline__text color-white">
+            We believe a brand’s worth has nothing to do with the size of the business behind it. No matter what stage your business is in, we’re here to make it worth more to every person who experiences it.
+          </p>
+        </div>
+      </section>
+  
+      <section class="blueprinting-balance" id='blueprintingBalance'>
+        
+        <div class="bb__container">
+          <div class="headline__container">
+            <h2 class="section__heading color-bt">
+              Blueprinting balance
+            </h2>
+            <div class="headline">
+              <div class="plus">
+                +
+              </div>
+              <p class="headline__text color-white">
+                If you don’t know where you’re going, how will you know when you get there? In our blueprinting phase, we work with you to determine the end goals of your project or campaign, then combine your brand knowledge with our marketing knowledge to create a strategy that gets you there.
+              </p>
+            </div>
+          </div>
+          <div class="strategy__container">
+            <h2 class="section__heading color-bt">
+              Strategy
+            </h2>
+            <ul class="strategy__list">
+              <li class="strategy__item">
+                <span>+</span>
+                Discovery and insights
+              </li>
+              <li class="strategy__item">
+                <span>+</span>
+                Competitive analysis
+              </li>
+              <li class="strategy__item">
+                <span>+</span>
+                Audience segmentation
+              </li>
+              <li class="strategy__item">
+                <span>+</span>
+                360 channel plan
+              </li>
+              <li class="strategy__item">
+                <span>+</span>
+                Business and marketing goals
+              </li>
+              <li class="strategy__item">
+                <span>+</span>
+                Challenges and opportunities
+              </li>
+              
+              <li class="strategy__item">
+                <span>+</span>
+                Identifying brand identity and positioning
+              </li>
+              <li class="strategy__item">
+                <span>+</span>
+                Internal digital/ marketing materials audit
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </section>
+    </div>
+    
+
+    <section class="building-balance" id='buildingBalance'>
+      <h2 class="section__heading color-white">
+        Building balance
+      </h2> 
+      <div class="headline">
+        <p class="headline__text color-white">
+          With a blueprint in place, your handpicked Mill + Co. team works to bring your brand story to life, then deliver it to just the right audience in just the right places.
+        </p>
+      </div>
+      <div class="card__container">
+        <div class="card card-1">
+          <div class="card__side card__front">
+            <h4 class="card__heading">
+              Storytelling
+            </h4>
+          </div>
+          <div class="card__side card__back">
+            <ul class="card__list">
+              <li class="card__item">
+                <span>+</span>
+                Copywriting
+              </li>
+              <li class="card__item">
+                <span>+</span>
+                Graphic Design
+              </li>
+              <li class="card__item">
+                <span>+</span>
+                Illustration
+              </li>
+              <li class="card__item">
+                <span>+</span>
+                Animation 
+              </li>
+              <li class="card__item">
+                <span>+</span>
+                Social Media 
+              </li>  
+            </ul>
+          </div>
+        </div>
+        <div class="card card-2">
+          <div class="card__front">
+            <h4 class="card__heading">
+              Content
+            </h4>
+          </div>
+          <div class="card__back">
+            <ul class="card__list">
+              <li class="card__item">
+                <span>+</span>
+                Photo Production 
+              </li> 
+              <li class="card__item">
+                <span>+</span>
+                Video Production
+              </li> 
+              <li class="card__item">
+                <span>+</span>
+                Collateral
+              </li> 
+              <li class="card__item">
+                <span>+</span>
+                Voiceover Talent
+              </li>  
+            </ul>
+          </div>
+        </div>
+        <div class="card card-3">
+          <div class="card__front">
+            <h4 class="card__heading">
+              Digital
+            </h4>
+          </div>
+          <div class="card__back">
+            <ul class="card__list">
+              <li class="card__item">
+                <span>+</span>
+                E-Commerce
+              </li> 
+              <li class="card__item">
+                <span>+</span>
+                Email Marketing
+              </li> 
+              <li class="card__item">
+                <span>+</span>
+                  Website Design and Development 
+                
+              </li> 
+              <li class="card__item">
+                <span>+</span>
+                Search Engine Optimization 
+              </li> 
+            </ul>
+          </div>
+
+        </div>
+        <div class="card card-4">
+          <div class="card__front">
+            <h4 class="card__heading">
+              Amplification
+            </h4>
+          </div>
+          <div class="card__back">
+            <ul class="card__list">
+              <li class="card__item">
+                <span>+</span>
+                Public Relations
+              </li> 
+              <li class="card__item">
+                <span>+</span>
+                Social Media Management
+              </li> 
+              <li class="card__item">
+                <span>+</span>
+                Influencer Marketing
+              </li> 
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="plus-lines">
+          <div class="line line-left">
+            &nbsp;
+          </div>
+          <div class="plus-w-line plus-w-line--right">
+            +
+          </div>
+        </div>
+        <div class="plus-lines">
+          <div class="line line-right">
+            &nbsp;
+          </div>
+          <div class="plus-w-line plus-w-line--left">
+            +
+          </div>
+        </div> -->
+
+        <div class="plus-lines">
+          <div class="line">
+            &nbsp;
+          </div>
+          <div class="plus-w-line plus-middle">
+            +
+          </div>
+        </div>
+        
+        
+      </div>
+    </section>
+
+    <section class="real-world-balance" id='realWorldBalance'>
+      <div class="video__section">
+        <h2 class="section__heading color-white">
+          Real-world balance
+        </h2>
+        <div class="video__container">
+          <iframe src="https://www.youtube.com/embed/oQg9ngOpWqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+
+      <div class="our-clients">
+        <h2 class="section__heading color-white">
+          Our Clients
+        </h2>
+        <div class="clients__container">
+          <div class="set set-1">
+              <img class="client__img" src="./images/8Well-Logo-Gold8GreyWell.png" alt="">
+              <img class="client__img" src="./images/Bellmans-logo_280x@2x.png" alt="">
+              <img class="client__img" src="./images/BFAS logo.png" alt="">
+              <img class="client__img" src="./images/CCA.png" alt="">
+              <img class="client__img" src="./images/Cheesemonger Logo (1).png" alt="">
+              <img class="client__img" src="./images/Cleaver Logo.png" alt="">
+              <!-- <img class="client__img" src="./images/consumable_logo.png" alt=""> -->
+              <img class="client__img" src="./images/Copy of PKKLogo.png" alt="">
+              <img class="client__img" src="./images/DGOlogo.png" alt="">
+              <img class="client__img" src="./images/FFWD_Horizontal_Web_Pink.png" alt="">
+              <img class="client__img" src="./images/GoodHelp-Logo-11.png" alt="">
+              <img class="client__img" src="./images/HMGlogo.png" alt="">
+              <img class="client__img" src="./images/Kays_main_logo_180x.png" alt="">
+              <img class="client__img" src="./images/LBB-Logotype-black.png" alt="">
+              <img class="client__img" src="./images/Limitless Women-01-2.png" alt="">
+              <img class="client__img" src="./images/LJL-Logo-Final-1.png" alt="">
+              <img class="client__img" src="./images/HMGlogo.png" alt="">
+              <img class="client__img" src="./images/MMlogo.png" alt="">
+              <img class="client__img" src="./images/HMGlogo.png" alt="">
+              <img class="client__img" src="./images/OGC, BKLYN-2.png" alt="">
+              <img class="client__img" src="./images/RClogo.png" alt="">
+              <img class="client__img" src="./images/Roar_Logo_B.png" alt="">
+              <img class="client__img" src="./images/Skinnypiglogo.png" alt="">
+              <img class="client__img" src="./images/sleepgiantlogo.png" alt="">
+              <img class="client__img" src="./images/slt-logo.png" alt="">
+              <img class="client__img" src="./images/snackerylogo.png" alt="">
+              <img class="client__img" src="./images/SwinCo.png" alt="">
+              <img class="client__img" src="./images/TheirStory_FinalLogo-2.png" alt="">
+              <img class="client__img" src="./images/treslashiquelogo.png" alt="">
+              <img class="client__img" src="./images/WBlogo.png" alt="">
+              <img class="client__img" src="./images/yard_logo_no_box_tagline.png" alt="">
+          </div>
+          <!-- <div class="set set-2">
+            <div class="client">
+              <img class="client__img" src="./images/8Well-Logo-Gold8GreyWell.png" alt="">
+            </div>
+            <div class="client">
+              <img class="client__img" src="./images/Bellmans-logo_280x@2x.png" alt="">
+            </div>
+            <div class="client">
+              <img class="client__img" src="./images/BFAS logo.png" alt="">
+            </div>
+            <div class="client">
+              <img class="client__img" src="./images/CCA.png" alt="">
+            </div>
+            <div class="client">
+              <img class="client__img" src="./images/Cheesemonger Logo (1).png" alt="">
+            </div>
+            <div class="client">
+              <img class="client__img" src="./images/Cleaver Logo.png" alt="">
+            </div>
+          </div> -->
+        </div>
+      </div>
+      
+    </section>
+  </section>
+
+  <section class="meet-the-millers" id='meetTheMillers'>
+    <div class="hasSameBackground">
+    <section class="headline__container" id='mtmHeadline'>
+      <h2 class="section__heading color-white">
+        MEET THE MILLERS
+      </h2>
+      <div class="headline">
+        <p class="headline__text color-bt">
+          From a global collective of nearly 150 freelance marketing professionals, 93% of whom are women, we select just the right experts to create a unique agency team for you based on your brand, your business needs, and your budget.
+        </p>
+      </div>
+    </section>
+
+    <section class="our-leaders" id='ourLeaders'>
+      <div class="section__header">
+        <h2 class="section__heading color-white">
+          OUR LEADERS
+        </h2>
+      </div>
+      
+      <div class="container">
+        <div class="section-line section-line__pos25">
+          &nbsp;
+        </div>
+        <div class="box-1--25">
+          <div class="bg-1 leader-1">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            &nbsp;
+          </div> 
+        </div>
+        <div class="box-2--75">
+          <div class="bg-2">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            <h6 class="content__heading">
+              <a href="#">
+                Rachel Ballatori, Founder + CEO
+              </a>
+              
+            </h6>
+            <p class="content">
+              Thinker. Creator. Originator. Dog mom. Foodie. Ask Rachel if she’s driven by her left brain, her right brain, or her heart and she’ll answer, “Yes.”
+            </p>
+            <p class="content">
+              Which is why after spending her early career overseeing accounts, devising killer strategy, creating award-winning content, and crushing social engagement metrics for several travel, tourism, food and beverage brands—all while starting her own non-profit donating several cancer research grants to Johns Hopkins Hospital—it’s no surprise she was named one of Baltimore’s Finest 35 Under 35.
+            </p>
+            <p class="content">
+              Along the way she witnessed what makes brands soar and where they have to settle in both advertising and media publishing, then she set out on her own to build a better way. Mill + Co.
+            </p>
+          </div> 
+        </div>
+      </div>
+      <div class="container">
+        <div class="section-line section-line__pos25">
+          &nbsp;
+        </div>
+        <div class="box-1--25">
+          <div class="bg-1 leader-2">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            &nbsp;
+          </div> 
+        </div>
+        <div class="box-2--75">
+          <div class="bg-2">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            <h6 class="content__heading">
+              <a href="#">
+                Emily Apple, Account Manager
+              </a>
+            </h6>
+            <p class="content">
+              Emily is fiercely organized and loves a good color-coded spreadsheet. As a professional dancer and photographer, storytelling has always been her passion. 
+            </p>
+            <p class="content">
+              In 2021, she earned a Master’s of Science in Digital Communications degree with a specialization in Advertising from the S.I. Newhouse School of Public Communications at Syracuse University. Emily holds certifications in Social Media Marketing from HubSpot Academy, Marketing Foundations from The Trade Desk Edge Academy, and Display Advertising from Google Ads. She is excited to help bring your brand’s story to life and will be there for you every step of the way.
+            </p>
+          </div> 
+        </div>
+      </div>
+      <div class="container">
+        <div class="section-line section-line__pos25">
+          &nbsp;
+        </div>
+        <div class="box-1--25">
+          <div class="bg-1 leader-3">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            &nbsp;
+          </div> 
+        </div>
+        <div class="box-2--75">
+          <div class="bg-2">
+            &nbsp;
+          </div>
+          <div class='box__content'>
+            <h6 class="content__heading">
+              <a href="#">
+                Olivia Sun, Assistant Account Manager
+              </a>
+            </h6>
+            <p class="content">
+              Driven by passion and curiosity, Olivia is a firm believer in the idea of “Living life to its fullest”.
+            </p>
+            <p class="content">
+              Born and raised in Shanghai, China, she graduated from Boston University’s College of Communications with a Master’s degree in Advertising in 2022. Before joining Mill + Co., she has experience working in Account Management on major CPG brands during her internships and she holds certifications such as Advanced Google Analytics from Google Analytics Academy. Olivia is determined to help better tell your brand’s story and satisfy your brand’s needs.
+            </p>
+            <p class="content">
+              Outside of her professional life, you can catch Olivia enjoying music, Hip-Hop dancing, and a scented candle before bed.
+            </p>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <section class="headline__container" id='ourCollective'>
+      <h2 class="section__heading color-white">
+        Who Makes Up Our Collective
+      </h2>
+      <div class="headline">
+        <p class="headline__text color-bt">
+          The ones who pave the way with progress. Over 150 freelance creative experts from around the world stand at the ready to unlock every bit of your brand’s potential. Our collective works on everything from Storytelling, Content Development, Digital, and Amplification. If you've been looking to build or rebuild your brand, let one of our collective members help you get started.
+        </p>
+      </div>
+      <div class="buttons">
+          <a href="#buildingBalance" class='btn btnLink btn--green'>
+            Learn More
+          </a>
+          <button href="#" class='btn btn--green openWWUModalBtn'>
+            Work With Us
+          </button>
+      </div>
+    </section>
+  </div>
+
+    
+  </section>
+
+  <section class="forms" id='forms'>
+    <div class="container hasEffect">
+      <!-- <div class="plus">
+        +
+      </div> -->
+      <div class="section-line section-line__pos50">
+        &nbsp;
+      </div>
+      <div class="box-1 box-1--hasEffect openWWUForm">
+        <div class="bg-1">
+          &nbsp;
+        </div>
+        <div class='box__content'>
+          <p class="section__heading ">
+            Work With Us
+          </p>
+        </div> 
+      </div>
+      <div class="box-2 box-2--hasEffect openWFUForm">
+        <div class="bg-2">
+          &nbsp;
+        </div>
+        <div class='box__content'>
+          <p class="section__heading">
+            Work For Us
+          </p>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <section class="trend-tracker-report" id='trendTrackerReport'>
+    <h2 class="section__heading color-bp">
+      TREND TRACKER REPORT
+    </h2>
+    <div class='headline'>
+      <p class='headline__text color-bt'>Trends go as quickly as they come. Don't worry, we're keeping track of them for you so you can join in on the latest conversations. Get the freshest insight on digital trends and news for a range of social media platforms across industries on a monthly basis. Subscribe to receive our FREE monthly Trend Tracker report below.</p>
+    </div>
+    <form class="tt-form">
+      <div class="form-group">
+        <input type="text" class="tt-email" id="tt-email" placeholder='Email'>
+        <label for="tt-email">Email</label>
+      </div>
+      
+      <a class="btn btnLink btnSubmit btn--blue-p" id='btnTTSubmit'>Sign Up</a>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="#" class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+      </a>
+      <a href="#" class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+      <a href="#" class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+      </a>
+      <a href="#" class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+      </a>
+    </div>
+    <div class="policies">
+      <a href="#" class="policy">Privacy Policy</a>
+      <a href="#" class="policy">Terms of Use</a>
+    </div>
+    <div class="copyright">
+      Mill + Co., LLC &copy;2022
+    </div>
+  </footer>
+
+  <div class="work-with-us-form d-none">
+    <div class="content">
+      <div class="form__header">
+        <h2 class="section__heading color-white">
+          WORK WITH US
+        </h2>
+        <div class="close-icon" id='closeWWUForm'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+        </div>
+      </div>
+      
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" class="name" id="name" placeholder='Name' required>
+          <label for="name">Name</label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="email" id="email" placeholder='Email' required>
+          <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" cols="10" rows="5" placeholder='How can we help your business?' required></textarea>
+          <label for="email">How can we help your business?</label>
+        </div>
+        
+        <a class="btn btnLink btn--green" id='btnWWUSubmit'>Submit</a>
+      </form>
+    </div>
+    
+  </div>
+
+  <div class="work-for-us-form d-none">
+    <div class="content">
+      <div class="form__header">
+        <h2 class="section__heading color-white">
+          WORK FOR US 
+        </h2>
+        <div class="close-icon" id='closeWFUForm'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+        </div>
+      </div>
+      
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" class="name" id="name" placeholder='Name' required>
+          <label for="name">Name</label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="email" id="email" placeholder='Email' required>
+          <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" cols="10" rows="5" placeholder='Tell us about your capabilities.' required></textarea>
+          <label for="email">Tell us about your capabilities</label>
+        </div>
+        
+        <a class="btn btnLink btn--green" id='btnWFUSubmit'>Submit</a>
+      </form>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

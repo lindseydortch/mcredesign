@@ -1,0 +1,90 @@
+// VARIABLES
+$font: 'Montserrat', sans-serif;
+$font-family: 'Montserrat', sans-serif;
+$blue-primary: #008acf;
+$blue-secondary: #80CAE9;
+$blue-tertiary: #232E56;
+$grey: #C7C8CA;
+$green: #cddbb6;
+$white: #ffffff;
+$dark-grey: #333333;
+$black: #000000;
+$bp-overlay: rgba(0, 138, 207, 0.7);
+$bs-overlay: rgba(128, 202, 233, 0.7);
+$bt-overlay: rgba(35, 46, 86, 0.7);
+$grey-overlay: rgba(199, 200, 202, 0.7);
+$green-overlay: rgba(205, 219, 182, 0.7);
+$bp-overlay--9: rgba(0, 138, 207, 0.95);
+$bs-overlay--9: rgba(128, 202, 233, 0.95);
+$bt-overlay--9: rgba(35, 46, 86, 0.95);
+$grey-overlay--9: rgba(199, 200, 202, 0.95);
+$green-overlay--9: rgba(205, 219, 182, 0.95);
+
+// RESPONSIVE BREAKPOINTS - BP * 16 = em
+$bp-1200: 75em; // 1200px 
+$bp-1000: 62.5em; // 1000px 
+$bp-800: 50em; // 800px 
+$bp-700: 43.75em; // 700px
+$bp-600: 37.5em; // 600px
+$bp-500: 31.25em; // 500px
+$bp-400: 25em; // 400px
+$bp-300: 18.75em; // 300px
+$bp-200: 12.5em; // 200px 
+
+// BASE 
+*, 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+
+  @media only screen and (max-width: $bp-800) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font;
+  font-weight: 600;
+  position: relative;
+  line-height: 1.5;
+  overflow-x: hidden;
+
+  letter-spacing: 0.2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+// IMPORTS
+@import './animations.scss';
+@import './reusable.scss'; 
+@import './sections';
+@import './diagonal-styling_.scss';
+@import './card.scss';
+
+// SECTION IMPORTS 
+@import './home.scss';
+@import './blue-printing.scss';
+@import './creating-balance.scss';
+@import './find-your-balance.scss';
+@import './footer.scss';
+@import './forms-section.scss';
+@import './forms.scss';
+@import './headline.scss';
+@import './how-to-create-balance.scss';
+@import './meet-the-millers.scss';
+@import './navbar.scss';
+@import './our-collective.scss';
+@import './our-leaders.scss';
+@import './work-for-us.scss';
+@import './work-for-us.scss';
+@import './trend-tracker-report.scss';

@@ -1,0 +1,118 @@
+.home,
+.how-to-create-balance,
+.creating-balance,
+.building-balance,
+.meet-the-millers,
+#mtmHeadline,
+.our-leaders,
+.forms,
+.trend-tracker-report {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  & .container {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.home {
+  // border: 3px solid palegreen;
+
+  & .container {
+    height: 90vh;
+
+    @media only screen and (max-width: $bp-1000) {
+      height: 80vh;
+    }
+
+    @media only screen and (max-width: $bp-600) {
+      height: 60vh;
+    }
+  }
+}
+
+.find-your-balance {
+  // border: 3px solid palegreen;
+  border-bottom: 3px solid $blue-tertiary;
+
+  & .container {
+    height: 80vh;
+  }
+}
+
+.how-to-create-balance {
+  // border: 3px solid palegreen;
+
+  // CHANGE THIS IMAGE
+  background-image: url('../images/blueprint-texture-[Converted].jpg');
+  background-color: $green;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  padding: 5rem;
+  border-bottom: 2px solid $blue-tertiary;
+  border-top: 2px solid $blue-tertiary;
+
+  @media only screen and (max-width: $bp-600) {
+    padding: 3rem;
+  }
+}
+
+.creating-balance {
+  // padding: 5rem;
+  // scroll-margin-top: 126px;
+  // scroll-padding-top: 126px;
+}
+
+.building-balance {
+  padding: 5rem;
+
+  @media only screen and (max-width: $bp-500) {
+    padding: 3rem;
+  }
+}
+
+#mtmHeadline,
+#ourCollective {
+  padding: 5rem 5rem 0 5rem;
+
+  @media only screen and (max-width: $bp-500) {
+    padding: 3rem;
+  }
+}
+
+.our-leaders {
+  .container {
+    position: relative;
+    width: 100%;
+    height: 45rem;
+    // max-height: 80rem;
+
+    @media only screen and (max-width: $bp-1000) {
+      height: 50rem;
+    }
+    @media only screen and (max-width: $bp-700) {
+      height: 45rem;
+    }
+    @media only screen and (max-width: $bp-600) {
+      height: 70rem;
+    }
+
+    @media only screen and (max-width: $bp-400) {
+      height: 80rem;
+    }
+  }
+}
+
+.forms {
+  // border: 3px solid palegreen;
+
+  & .container {
+    height: 80vh;
+  }
+}

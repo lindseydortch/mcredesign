@@ -1,0 +1,90 @@
+.forms {
+
+  .container {
+    @media only screen and (max-width: $bp-600) {
+      height: 75vh;
+    }
+  
+    @media only screen and (max-width: $bp-500) {
+      height: 30vh;
+    }
+  }
+  .box-1,
+  .box-2 {
+    cursor: pointer;
+  }
+
+  .bg-1 {
+    background-color: $blue-primary;
+  }
+  .bg-2 {
+    background-color: $blue-tertiary;
+  }
+
+  // .plus {
+  //   top: 50%;
+  //   left: 50%;
+  //   opacity: 0.9;
+  //   color: $green;
+  //   transform: translate(-50%, -50%);
+  //   z-index: 7777777;
+  // }
+
+  .section-line {
+    z-index: 3333;
+  }
+
+  
+
+  .box__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .box-1 {
+    .box__content {
+      @media only screen and (max-width: $bp-600) {
+        // justify-content: flex-end;
+      }
+    }
+
+    @media only screen and (max-width: $bp-600) {
+      padding: 3rem 5rem 3rem 15rem;
+    }
+  }
+
+  .box-2 {
+    .box__content {
+      @media only screen and (max-width: $bp-600) {
+        // justify-content: flex-start;
+      }
+    }
+
+    @media only screen and (max-width: $bp-600) {
+      padding: 3rem 15rem 3rem 5rem;
+    }
+  }
+
+  .section__heading {
+    width: min-content;
+    text-align: center;
+    font-size: 6rem;
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-1200) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-500) {
+      font-size: 1.8rem;
+    }
+  }
+}

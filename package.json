@@ -1,0 +1,16 @@
+{
+  "name": "v2-wordpressless-mill-co",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded styles/main.scss:styles.css",
+    "sass-prod": "sass --no-source-map --style=compressed styles/main.scss:styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.3"
+  }
+}

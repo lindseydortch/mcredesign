@@ -1,0 +1,117 @@
+.how-to-create-balance {
+
+  .section__heading {
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: $bp-1000) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-400) {
+      font-size: 1.6rem;
+    }
+  }
+
+  .cb__container {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+
+    @media only screen and (max-width: $bp-700) {
+      flex-direction: column;
+    }
+  }
+  .step {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    min-height: 20rem;
+    text-align: center;
+    background-color: $blue-tertiary;
+    color: $white;
+    padding: 3rem;
+    font-size: 1.8rem;
+    border-radius: 0.4rem;
+
+    opacity: 0;
+
+    @media only screen and (max-width: $bp-800) {
+      font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+      margin-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      padding: 2rem;
+      justify-content: center;
+      line-height: 1;
+      min-height: 10rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  .plus-step-icon,
+  .equal-step-icon {
+    align-self: center;
+    line-height: 0;
+    font-size: 20rem;
+    color: $blue-primary;
+    opacity: 0;
+
+    @media only screen and (max-width: $bp-600) {
+      font-size: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-700) {
+      align-self: none;
+      line-height: 1;
+      font-size: 8rem;
+    }
+  }
+}
+
+.cbInView {
+  animation: fadeIn;
+  animation-delay: .4s ;
+  animation-duration: .3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.cbInView2 {
+  animation: fadeIn;
+  animation-delay: .6s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.cbInView3 {
+  animation: fadeIn;
+  animation-delay: .8s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.cbInView4 {
+  animation: fadeIn;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.cbInView5 {
+  animation: fadeIn;
+  animation-delay: 1.3s;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

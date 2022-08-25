@@ -1,0 +1,75 @@
+.trend-tracker-report {
+  padding: 5rem;
+
+  @media only screen and (max-width: $bp-500) {
+    padding: 3rem;
+  }
+
+  .section__heading {
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-500) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .tt-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
+
+  .form-group {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 3rem;
+
+    label {
+      display: block;
+      // position: absolute;
+      // bottom: -3rem;
+      font-size: 1.4rem;
+      color: $blue-primary;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      display: block;
+      transition: all .3s;
+    }
+
+    .tt-email {
+      padding: 1rem;
+      /* width: 95%; */
+      color: $blue-primary; 
+      font-size: 1.4rem;
+      margin-right: 4rem;
+      border: 0;
+      border-bottom: 2px solid $green;
+
+      &::placeholder {
+        color: $green;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+      }
+
+      &:placeholder-shown + label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem); 
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .btnSubmit {
+    padding: 1rem;
+  }
+}

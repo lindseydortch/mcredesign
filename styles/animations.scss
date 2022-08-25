@@ -1,0 +1,174 @@
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+      opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: .5;
+  }
+
+  50% {
+    opacity: 1;
+    visibility: shown;
+  }
+
+  75% {
+    opacity: .55;
+  }
+
+  100% {
+      opacity: 0;
+      visibility: hidden;
+  }
+}
+
+@keyframes fadeInOutwDisplay {
+  0% {
+    opacity: 0;
+    display: block;
+  }
+
+  25% {
+    opacity: .5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: .55;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes typing {
+  from {width: 0}
+  to {width: 100%}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+@keyframes moveInRight {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(2rem);
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRightwFadeOut {
+  0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(2rem);
+  }
+
+  50% {
+      transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moveInRightwFadeOut2 {
+  0% {
+    visibility: visible;
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+
+  20% {
+      transform: translateX(2rem);
+  }
+
+  50% {
+    visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes moveInRightwFadeOut3 {
+  0% {
+    visibility: visible;
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+
+  20% {
+      transform: translateX(2rem);
+  }
+
+  50% {
+    visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes ticker-kf {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-108rem, 0, 0);
+  }
+}
