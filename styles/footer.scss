@@ -29,7 +29,8 @@
     align-items: center;
 
     @media only screen and (max-width: $bp-400) {
-      width: 30%;
+      width: 40%;
+      flex-wrap: wrap;
     }
   }
 

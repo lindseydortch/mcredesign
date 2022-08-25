@@ -22,6 +22,14 @@
     border-radius: 0.3rem;
     padding: 3rem;
     max-height: 100%;
+
+    @media only screen and (max-width: $bp-900) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $bp-400) {
+      width: 90%;
+    }
   }
 
   .form__header {
