@@ -66,6 +66,10 @@
       &:hover {
         background-color: transparent;
       }
+
+      @media only screen and (max-width: $bp-500) {
+        border-bottom: 5px solid $white;
+      }
     }
 
     .box-1--25 {

@@ -1592,6 +1592,11 @@ body {
   background-color: transparent;
 }
 @media only screen and (max-width: 31.25em) {
+  .meet-the-millers .our-leaders .bg-1 {
+    border-bottom: 5px solid #ffffff;
+  }
+}
+@media only screen and (max-width: 31.25em) {
   .meet-the-millers .our-leaders .box-1--25 {
     height: 30rem;
   }
