@@ -24,7 +24,7 @@
 
     .section-line__pos25 {
       @media only screen and (max-width: $bp-500) {
-        left: 40%;
+        left: 20%;
       }
     }
 
@@ -41,7 +41,7 @@
         width: 110%;
 
         @media only screen and (max-width: $bp-700) {
-          width: 130%;
+          // width: 130%;
         }
       }
       &.leader-2 {
@@ -50,7 +50,7 @@
         background-position: top;
         width: 110%;
         @media only screen and (max-width: $bp-700) {
-          width: 130%;
+          // width: 130%;
         }
       }
       &.leader-3 {
@@ -59,7 +59,7 @@
         background-position: top;
         width: 110%;
         @media only screen and (max-width: $bp-700) {
-          width: 130%;
+          // width: 130%;
         }
       } 
 
@@ -70,7 +70,8 @@
 
     .box-1--25 {
       @media only screen and (max-width: $bp-500) {
-        width: calc(40% + 10rem);
+        // width: calc(40% + 10rem);
+        height: 30rem;
       }
 
       .box__content {
@@ -88,12 +89,14 @@
         // transform: skew(-10deg);
 
         @media only screen and (max-width: $bp-500) {
-          padding: 5rem 15rem 5rem 8rem;
+          padding: 2rem 15rem 2rem 3rem;
+          // width: 50%;
+          justify-content: flex-start;
         }
       }
 
       @media only screen and (max-width: $bp-500) {
-        width: calc(60% + 10rem);
+        overflow: visible;
       }
 
       .content__heading {

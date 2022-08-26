@@ -438,12 +438,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .our-leaders .container {
-    height: 100rem;
-  }
-}
-@media only screen and (max-width: 25em) {
-  .our-leaders .container {
-    height: 120rem;
+    height: 60rem;
   }
 }
 
@@ -1569,7 +1564,7 @@ body {
 }
 @media only screen and (max-width: 31.25em) {
   .meet-the-millers .our-leaders .section-line__pos25 {
-    left: 40%;
+    left: 20%;
   }
 }
 .meet-the-millers .our-leaders .bg-1 {
@@ -1581,21 +1576,11 @@ body {
   background-color: rgba(35, 46, 86, 0.7);
   width: 110%;
 }
-@media only screen and (max-width: 43.75em) {
-  .meet-the-millers .our-leaders .bg-1.leader-1 {
-    width: 130%;
-  }
-}
 .meet-the-millers .our-leaders .bg-1.leader-2 {
   background-image: url("../images/emily.jpeg");
   background-color: rgba(35, 46, 86, 0.7);
   background-position: top;
   width: 110%;
-}
-@media only screen and (max-width: 43.75em) {
-  .meet-the-millers .our-leaders .bg-1.leader-2 {
-    width: 130%;
-  }
 }
 .meet-the-millers .our-leaders .bg-1.leader-3 {
   background-image: url("../images/olivia.jpeg");
@@ -1603,17 +1588,12 @@ body {
   background-position: top;
   width: 110%;
 }
-@media only screen and (max-width: 43.75em) {
-  .meet-the-millers .our-leaders .bg-1.leader-3 {
-    width: 130%;
-  }
-}
 .meet-the-millers .our-leaders .bg-1:hover {
   background-color: transparent;
 }
 @media only screen and (max-width: 31.25em) {
   .meet-the-millers .our-leaders .box-1--25 {
-    width: calc(40% + 10rem);
+    height: 30rem;
   }
 }
 .meet-the-millers .our-leaders .box-1--25 .box__content {
@@ -1628,12 +1608,13 @@ body {
 }
 @media only screen and (max-width: 31.25em) {
   .meet-the-millers .our-leaders .box-2--75 .box__content {
-    padding: 5rem 15rem 5rem 8rem;
+    padding: 2rem 15rem 2rem 3rem;
+    justify-content: flex-start;
   }
 }
 @media only screen and (max-width: 31.25em) {
   .meet-the-millers .our-leaders .box-2--75 {
-    width: calc(60% + 10rem);
+    overflow: visible;
   }
 }
 .meet-the-millers .our-leaders .box-2--75 .content__heading {
