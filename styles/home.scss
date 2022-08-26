@@ -19,8 +19,9 @@
     }
 
     @media only screen and (max-width: $bp-500) {
-      width: 100%;
-      background-color: transparent;
+      width: calc(100% + 10rem);
+      transform: skew(0deg);
+      // background-color: transparent;
     }
 
     @media only screen and (max-width: $bp-300) {
@@ -69,6 +70,7 @@
 
     @media only screen and (max-width: $bp-500) {
       // align-items: center;
+      transform: skew(0deg);
     }
   }
 

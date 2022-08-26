@@ -312,7 +312,7 @@
   // SUBSECTION STYLING
   .real-world-balance {
     // background-color: $grey;
-    background-image: linear-gradient(to right bottom, #e4ecd8, #d9e3c7, $green, #c1d3a5);
+    background-image: linear-gradient(to right bottom, $blue-secondary, $blue-primary,  $blue-tertiary);
     padding: 5rem;
     border-bottom: 3px solid $blue-tertiary;
 

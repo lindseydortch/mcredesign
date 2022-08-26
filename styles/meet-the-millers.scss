@@ -1,11 +1,10 @@
 .meet-the-millers {
   .hasSameBackground {
-    background-image: url('../images/blueprint-texture-[Converted].jpg');
-    background-color: $blue-primary;
+    background-image: linear-gradient(to right bottom, #e4ecd8, #d9e3c7, $green, #c1d3a5);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-blend-mode: soft-light;
+    // background-blend-mode: soft-light;
   }
 
   .section__heading {
@@ -21,6 +20,12 @@
       padding: 1rem;
       display: flex;
       justify-content: flex-start;
+    }
+
+    .section-line__pos25 {
+      @media only screen and (max-width: $bp-500) {
+        left: 40%;
+      }
     }
 
     .bg-1 {
@@ -64,6 +69,10 @@
     }
 
     .box-1--25 {
+      @media only screen and (max-width: $bp-500) {
+        width: calc(40% + 10rem);
+      }
+
       .box__content {
         display: none;
       }
@@ -78,11 +87,13 @@
         justify-content: center;
         // transform: skew(-10deg);
 
-        & > * {
-          // transform: skew(10deg);
-          border-radius: 0.3rem;
-          
+        @media only screen and (max-width: $bp-500) {
+          padding: 5rem 15rem 5rem 8rem;
         }
+      }
+
+      @media only screen and (max-width: $bp-500) {
+        width: calc(60% + 10rem);
       }
 
       .content__heading {
@@ -113,7 +124,7 @@
         font-size: 1.4rem;
         margin-bottom: 1rem;
         // background-color: $white;
-        color: $white;
+        color: $blue-primary;
         // box-shadow: 0rem 1rem 2rem 1rem rgba(0,0,0,.3);
 
         &:nth-of-type(2) {
